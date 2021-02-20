@@ -4,14 +4,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <title>Document</title>
   <style>
+  .valign-wrapper {flex-wrap: wrap;}
   .img{
     max-height:50px;
   }
   .card { border-radius : 100px; }
     body{
+      overscroll-behavior-x: none;
+      overscroll-behavior-y: none;
       background-color: black;
     }
     section{
@@ -33,14 +37,29 @@
 </head>
 <body>
   <nav class="nav-wrapper blue-grey darken-1">
-
+    <div class="container">
+      <a href="" class="brand-logo">Aman Ali</a>
+    </div>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#skills">My Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#coCurr">Co-curricular</a></li>
+      <li><a href="#reccomendations">Reccomendations</a></li>
+    </ul>
+    <a href="" class="sidenav-trigger" data-target="mobile-data"><i class="material-icons">menu</i></a>
+    <ul class="sidenav sidenav-close" id="mobile-data">
+      <li><a href="#skills">My Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#coCurr">Co-curricular</a></li>
+      <li><a href="#reccomendations">Reccomendations</a></li>
+    </ul>
   </nav>
-  <div class="row">
-    <div class="col s12 l4  ">
-      <img src="assets/img/Aman.jpg" alt="" class="circle responsive-img  z-depth-3" >
+  <div class="row  ">
+    <div class="col s12 l4 ">
+      <img src="assets/img/aman.jpg" alt="" class="circle responsive-img  z-depth-3" >
     </div>
 
-   <div class="col s12 l7 m5 offset-l1">
+   <div class="col s12 l7 m5 offset-l1 ">
      <div class="card card-panel grey darken-3" >
        <div class="card-content valign center">
 
@@ -56,10 +75,10 @@
      </div>
    </div>
   </div>
-  <section id="skills">
+  <section class="scrollspy" id="skills">
     <div class="row center">
       <div class="col s12 l4 offset-l2 pull-l1">
-        <h3>Technical skill</h3>
+        <h3 class="flow-text">Technical skill</h3>
         <ul>
           <li>-Python</li>
           <li>-Java</li>
@@ -70,7 +89,7 @@
         </ul>
       </div>
       <div class="col s12 l6">
-        <h3>Soft Skills</h3>
+        <h3 class="flow-text">Soft Skills</h3>
         <ul>
           <li>-Effective Communication and Leadership skills</li>
           <li>-Creativity</li>
@@ -80,10 +99,10 @@
       </div>
     </div>
   </section>
-  <section id="reason">
+  <section class="scrollspy"  id="reason">
     <div class="row center">
       <div class="col l10 offset-l1">
-        <h3>Why I want to be a MLSA?</h3>
+        <h3 class="flow-text">Why I want to be a MLSA?</h3>
         <p>Being an MLSA would be a dream come true for me.
           My love for Microsoft started when I first attended the Microsoft AI Classroom series.It was there I first learnt how AI works ,we built chatbots and developed simple models for processing and also gained an insight on how we could use the services provided by Azure.
           Azure Cognitive Services became my reason to explore the field of AI and it lead me to use the face API  as an emotion recogniser in our first project Aanchal.
@@ -92,17 +111,18 @@
       </div>
     </div>
   </section>
-  <section id="projects">
+
+  <section  class="scrollspy"  id="projects">
     <div class="center">
-      <h3>My Projects</h3>
+      <h3 class="flow-text">My Projects</h3>
     </div>
     <br>
-    <div class="row">
+    <div class="row valign-wrapper">
       <div class="col s6 l3">
-        <img src="assets/img/jarvis2.png" alt="" class="responsive-img z-depth-4">
+        <img src="assets/img/jarvis.png" alt="" class="circle responsive-img z-depth-4">
       </div>
       <div class="col s6 l3">
-        <img src="assets/img/ann.png" alt="" class="responsive-img z-depth-4">
+        <img src="assets/img/ann.png" alt="" class="circle responsive-img z-depth-4">
       </div>
 
       <div class="col s6 l3">
@@ -114,30 +134,100 @@
       </div>
     </div>
   </section>
-  <section id="coCurr">
+
+  <section class="scrollspy"  id="coCurr">
     <div class="center">
-      <h3>Co-curricular</h3>
+      <h3 class="flow-text">Co-curricular</h3>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col s6 l4 offset-l2 pull-l1">
+        <figure class="center">
+          <img src="assets/img/horizon.png" alt="" class=" responsive-img  z-depth-3" >
+          <figcaption class="flow-text">HORIZON '21 - EVENT COORDINATOR</figcaption>
+        </figure>
+      </div>
+      <div class="col s6 l4 offset-l2 pull-l1">
+        <figure class="center">
+          <img src="assets/img/gssoc.png" alt="" class=" responsive-img  z-depth-3" >
+          <figcaption class="flow-text">GSSOC '21 - PARTICIPANT</figcaption>
+        </figure>
+      </div>
     </div>
     <br>
     <div class="row">
-      <div class="col s6 l2 right-align offset-l2   ">
-        <h5 class="">HORIZON '21</h5>
-        <p>Event Co-ordinator</p>
+      <div class="col s4 l4">
+        <figure class="center">
+          <img src="assets/img/iste.png" alt="" class=" circle responsive-img  z-depth-3">
+          <figcaption class="flow-text">ISTE - CORE COMMITTEE MEMBER</figcaption>
+        </figure>
       </div>
-      <div class="col s6 l2  ">
-        <img src="assets/img/horizon.png" alt="" class="responsive-img  z-depth-3" >
+      <div class="col s4 l4">
+        <figure class="center">
+          <img src="assets/img/mstc.png" alt="" class="circle responsive-img  z-depth-3">
+
+          <figcaption class="flow-text">MSTC - CORE COMMITTEE MEMBER</figcaption>
+        </figure>
       </div>
-      <div class="col s6 l2 right-align   ">
-        <h5 class="">GSSOC ‘21</h5>
-        <p>Participant</p>
-      </div>
-      <div class="col s6 l3  ">
-        <img src="assets/img/gssoc.png" alt="" class="responsive-img  z-depth-3">
+      <div class="col s4 l4">
+        <figure class="center">
+          <img src="assets/img/codeChef.png" alt="" class=" circle responsive-img  z-depth-3">
+          <figcaption class="flow-text">CODE CHEF - CORE COMMITTEE MEMBER</figcaption>
+        </figure>
       </div>
     </div>
-
   </section>
+  <section class="scrollspy" id="reccomendations">
+    <div class="center">
+    <h3>RECCOMENDATIONS<h3>
+    </div>
+    <br>
+    <div class="row ">
+      <div class="col s12 l3 center offset-l1 " >
+        <h4>Deep Gandhi</h4>
+        <h6 ><em>Core Committee Member at Student Technical Community VIT Vellore</em></h6>
+        <p>Working with Aman always fascinates me. He is hard working and extremely dedicated to his work. It's always fun discussing tech with him irrespective of the time of the day. It is really fun working with him and he works really well with the team. Participating in workshops and hacks with him, you know he never takes no for an answer. We compliment each other well and ofcourse he's an amazing person to be around. Hope to grow my skill-set with him</p>
+      </div>
+      <div class="col s12 l3 center offset-l1 pull-l1" style="border-left:2px solid black;border-right:2px solid black">
+        <h4>Hamid Rizvi</h4>
+        <h6><em>Volunteer at SRM Alumni Affairs | Cloud Computing enthusiast</em></h6>
+        <p>Aman is a motivated and a forward thinking guy. He is very conscientious and dedicated to his work. He has positive attitude and a desire to produce quality work. I rarely come across real talents who stand out like Aman.</p>
+      </div>
+      <div class="col s12 l3 center offset-l1 pull-l2">
+        <h4>Dwija Patel</h4>
+        <h6><em>Core Committee Member at Indian Society for Technical EducationVIT Vellore</em></h6>
+        <p>Aman is a very hard working and dedicated person. He is always looking forward to maximise his skills and comes up with really innovative ideas and alternatives. His interest in the domain of AI is a lot appreciated and keeps on finding newer ways to execute his ideas.He is a great teammate and is always willing to help others. He suggests new directions to explore. He is a person with vision and inspires his teammates to strive for the same. I admire the way he looks up to success and hope to work and learn a lot more from him.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row center">
+
+        <div class="col s12 l10 offset-l2  ">
+          <h4>REACH OUT TO ME</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/-aman/" class="grey-text text-lighten-3">LinkedIn <i class="fab fa-LinkedIn"></i></a></li>
+            <li><a class="grey-text text-lighten-3">Github <i class="fab fa-github"></i></a></li>
+            <li><a href="tel:+917704004066"class="grey-text text-lighten-3">7704004066 <i class="material-icons">phone</i></a></li>
+            <li><a href="mailto:amanali.siddiqui2020@vitstudent.ac.in" class="grey-text text-lighten-3">amanali.siddiqui2020@vitstudent.ac.in <i class="material-icons">mail</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.scrollspy').scrollSpy();
+
+    })
+
+  </script>
 </body>
 </html>
