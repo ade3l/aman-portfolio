@@ -20,10 +20,23 @@
   nav{
     background-color:#2C252D;
   }
+  html,body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      /* overflow: hidden; */
+  }
   body{
+    width: 100%;
+    height: 100%;
+      margin: 0;
+      padding: 0;
       overscroll-behavior-x: none;
       overscroll-behavior-y: none;
       background-color: #926154;
+
     }
   section{
       padding-top:4vw;
@@ -34,14 +47,9 @@
   .heading{
     color:#AD7761;
   }
-    /* #projects img{
-      max-height: 397px;
-      max-width: 220px;
-    } */
-    /* #coCurr img{
-      max-height: 150px;
-      max-width: 150px;
-    } */
+  .highlight:hover {
+     background-color: #AD7761;
+  }
 
   </style>
 </head>
@@ -51,11 +59,17 @@
     <div class="container">
       <a href="" class="brand-logo">Aman Ali</a>
     </div>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="#skills">My Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#coCurr">Co-curricular</a></li>
-      <li><a href="#reccomendations">Reccomendations</a></li>
+    <ul class="right hide-on-med-and-down ">
+      <li class="highlight"><a href="#skills">My Skills</a></li>
+      <li class="highlight"><a href="#projects">Projects</a></li>
+      <li class="highlight"><a href="#coCurr">Co-curricular</a></li>
+      <li class="highlight"><a href="#reccomendations">Reccomendations</a></li>
+      <li ><a href="#" class="tooltipped btn-floating btn-small transparent"   data-tooltip="Instagram">
+        <i class="fab fa-linkedin"></i>
+      </a></li>
+      <li><a href="#" class="tooltipped btn-floating btn-small transparent"   data-tooltip="Instagram">
+        <i class="fab fa-github"></i>
+      </a></li>
     </ul>
     <a href="" class="sidenav-trigger" data-target="mobile-data"><i class="material-icons">menu</i></a>
     <ul class="sidenav sidenav-close" id="mobile-data">
