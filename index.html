@@ -12,18 +12,28 @@
   .img{
     max-height:50px;
   }
-  .card { border-radius : 100px; }
-    body{
+  .card {
+    border-radius : 100px;
+    background-color:#E6DCCF;
+    color:#926154;
+  }
+  nav{
+    background-color:#2C252D;
+  }
+  body{
       overscroll-behavior-x: none;
       overscroll-behavior-y: none;
-      background-color: black;
+      background-color: #926154;
     }
-    section{
+  section{
       padding-top:4vw;
       padding-bottom:4vw;
-      background-color: white;
-
+      background-color: #E6DCCF;
+      color:#926154;
     }
+  .heading{
+    color:#AD7761;
+  }
     /* #projects img{
       max-height: 397px;
       max-width: 220px;
@@ -36,7 +46,8 @@
   </style>
 </head>
 <body>
-  <nav class="nav-wrapper blue-grey darken-1">
+  <!-- ....................-NAVBAR-.................... -->
+  <nav class="nav-wrapper ">
     <div class="container">
       <a href="" class="brand-logo">Aman Ali</a>
     </div>
@@ -54,16 +65,17 @@
       <li><a href="#reccomendations">Reccomendations</a></li>
     </ul>
   </nav>
+
   <div class="row  ">
     <div class="col s12 l4 ">
       <img src="assets/img/aman.jpg" alt="" class="circle responsive-img  z-depth-3" >
     </div>
 
    <div class="col s12 l7 m5 offset-l1 ">
-     <div class="card card-panel grey darken-3" >
+     <div class="card card-panel " style="">
        <div class="card-content valign center">
 
-         <p class="white-text flow-text">Could we be immortal?
+         <p class="flow-text">Could we be immortal?
           A first year ML enthusiast who asks this question every single day😅
           Currently learning machine learning (diving deep)
           I’ve a passion for computing and technology since my childhood,I love to explore more about Artificial Intelligence,Neural Networks,Brain machine interfaces,Computer Vision
@@ -77,24 +89,24 @@
   </div>
   <section class="scrollspy" id="skills">
     <div class="row center">
-      <div class="col s12 l4 offset-l2 pull-l1">
-        <h3 class="flow-text">Technical skill</h3>
+      <div class="col s12 l4 offset-l2 pull-l1 ">
+        <h3 class="heading flow-text">Technical skill</h3>
         <ul>
-          <li>-Python</li>
-          <li>-Java</li>
-          <li>-OpenCV</li>
-          <li>-Machine Learning</li>
-          <li>-Adobe XD</li>
-          <li>-git & GitHub</li>
+          <li class="flow-text">-Python</li>
+          <li class="flow-text">-Java</li>
+          <li class="flow-text">-OpenCV</li>
+          <li class="flow-text">-Machine Learning</li>
+          <li class="flow-text">-Adobe XD</li>
+          <li class="flow-text">-git & GitHub</li>
         </ul>
       </div>
       <div class="col s12 l6">
-        <h3 class="flow-text">Soft Skills</h3>
+        <h3 class="heading flow-text">Soft Skills</h3>
         <ul>
-          <li>-Effective Communication and Leadership skills</li>
-          <li>-Creativity</li>
-          <li>-Public Speaking</li>
-          <li>-Teamwork Networking</li>
+          <li class="flow-text">-Effective Communication and Leadership skills</li>
+          <li class="flow-text">-Creativity</li>
+          <li class="flow-text">-Public Speaking</li>
+          <li class="flow-text">-Teamwork Networking</li>
         </ul>
       </div>
     </div>
@@ -102,7 +114,7 @@
   <section class="scrollspy"  id="reason">
     <div class="row center">
       <div class="col l10 offset-l1">
-        <h3 class="flow-text">Why I want to be a MLSA?</h3>
+        <h3 class="heading flow-text">Why I want to be a MLSA?</h3>
         <p>Being an MLSA would be a dream come true for me.
           My love for Microsoft started when I first attended the Microsoft AI Classroom series.It was there I first learnt how AI works ,we built chatbots and developed simple models for processing and also gained an insight on how we could use the services provided by Azure.
           Azure Cognitive Services became my reason to explore the field of AI and it lead me to use the face API  as an emotion recogniser in our first project Aanchal.
@@ -114,7 +126,7 @@
 
   <section  class="scrollspy"  id="projects">
     <div class="center">
-      <h3 class="flow-text">My Projects</h3>
+      <h3 class="heading flow-text">My Projects</h3>
     </div>
     <br>
     <div class="row valign-wrapper">
@@ -137,20 +149,20 @@
 
   <section class="scrollspy"  id="coCurr">
     <div class="center">
-      <h3 class="flow-text">Co-curricular</h3>
+      <h3 class="heading flow-text">Co-curricular</h3>
     </div>
     <br>
 
     <div class="row">
       <div class="col s6 l4 offset-l2 pull-l1">
         <figure class="center">
-          <img src="assets/img/horizon.png" alt="" class=" responsive-img  z-depth-3" >
+          <img src="assets/img/horizon.png" alt="" class="white circle responsive-img  z-depth-3" >
           <figcaption class="flow-text">HORIZON '21 - EVENT COORDINATOR</figcaption>
         </figure>
       </div>
       <div class="col s6 l4 offset-l2 pull-l1">
         <figure class="center">
-          <img src="assets/img/gssoc.png" alt="" class=" responsive-img  z-depth-3" >
+          <img src="assets/img/gssoc.png" alt="" class="circle responsive-img  z-depth-3" >
           <figcaption class="flow-text">GSSOC '21 - PARTICIPANT</figcaption>
         </figure>
       </div>
@@ -180,23 +192,23 @@
   </section>
   <section class="scrollspy" id="reccomendations">
     <div class="center">
-    <h3>RECCOMENDATIONS<h3>
+    <h3 class="heading flow-text">RECCOMENDATIONS</h3>
     </div>
     <br>
     <div class="row ">
       <div class="col s12 l3 center offset-l1 " >
-        <h4>Deep Gandhi</h4>
-        <h6 ><em>Core Committee Member at Student Technical Community VIT Vellore</em></h6>
+        <h4 class="heading flow-text">Deep Gandhi</h4>
+        <h6 class="heading flow-text"><em>Core Committee Member at Student Technical Community VIT Vellore</em></h6>
         <p>Working with Aman always fascinates me. He is hard working and extremely dedicated to his work. It's always fun discussing tech with him irrespective of the time of the day. It is really fun working with him and he works really well with the team. Participating in workshops and hacks with him, you know he never takes no for an answer. We compliment each other well and ofcourse he's an amazing person to be around. Hope to grow my skill-set with him</p>
       </div>
       <div class="col s12 l3 center offset-l1 pull-l1" style="border-left:2px solid black;border-right:2px solid black">
-        <h4>Hamid Rizvi</h4>
-        <h6><em>Volunteer at SRM Alumni Affairs | Cloud Computing enthusiast</em></h6>
+        <h4 class="heading flow-text">Hamid Rizvi</h4>
+        <h6 class="heading flow-text"><em>Volunteer at SRM Alumni Affairs | Cloud Computing enthusiast</em></h6>
         <p>Aman is a motivated and a forward thinking guy. He is very conscientious and dedicated to his work. He has positive attitude and a desire to produce quality work. I rarely come across real talents who stand out like Aman.</p>
       </div>
       <div class="col s12 l3 center offset-l1 pull-l2">
-        <h4>Dwija Patel</h4>
-        <h6><em>Core Committee Member at Indian Society for Technical EducationVIT Vellore</em></h6>
+        <h4 class="heading flow-text">Dwija Patel</h4>
+        <h6 class="heading flow-text"><em>Core Committee Member at Indian Society for Technical EducationVIT Vellore</em></h6>
         <p>Aman is a very hard working and dedicated person. He is always looking forward to maximise his skills and comes up with really innovative ideas and alternatives. His interest in the domain of AI is a lot appreciated and keeps on finding newer ways to execute his ideas.He is a great teammate and is always willing to help others. He suggests new directions to explore. He is a person with vision and inspires his teammates to strive for the same. I admire the way he looks up to success and hope to work and learn a lot more from him.</p>
       </div>
     </div>
